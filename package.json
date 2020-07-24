@@ -10,13 +10,11 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/Karsus7/burger"
     },
     "author": "William Broussard",
     "license": "ISC",
-    "bugs": {
-        "url": ""
-    },
+
     "homepage": "",
     "dependencies": {
         "dotenv": "^8.2.0",
