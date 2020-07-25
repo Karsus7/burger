@@ -4,7 +4,7 @@ const mysql = require("mysql");
 require('dotenv').config();
 
 var connection;
-
+// JAWSDB_URL is the connection to post the app on heroku, kept safe in .env
 if (process.env.JAWSDB_URL) {
     // Database is JawsDB on Heroku
     connection = mysql.createConnection(process.env.JAWSDB_URL);

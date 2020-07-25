@@ -7,8 +7,9 @@
         <panel>
             <form class="create-form">
                 <div class="form-group">
+                    {{!-- Makes the text box for typing in new orders --}}
                     <input type="text" id="newburger" name="burger">
-
+                    {{!-- Makes the submit button for the text box, triggering addburger function --}}
                     <button type="submit" class="btn btn-success" id="addburger">
                         <strong>Submit</strong>
                     </button>
@@ -39,7 +40,7 @@
         </div>
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="rightside"><strong>Burgers You Have Eaten:</strong>
+                <div class="panel-heading" id="rightside"><strong>Burgers You Have Eaten</strong>
                 </div>
                 <div class="panel-body">
                     <ul>

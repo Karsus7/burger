@@ -3,6 +3,7 @@
 ## Description
 
 This application is powered by Node and Express, uses MVC, and serves to record different types of burgers submitted by the user.
+After the burger has been sumbmitted it is added to a list, from there the user can push a button to move it to another list.
 
 
 ## Table of Contents
@@ -26,4 +27,4 @@ MIT
 [William Broussard](https://github.com/Karsus7)
 
 ## Demo
-Hosted on heroku at []()
+Hosted on heroku at [burger](https://agile-lake-32583.herokuapp.com/)
