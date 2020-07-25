@@ -1,7 +1,7 @@
 const orm = require("../config/orm.js");
 const burger = {
-	selectAll: function (cb) {
-		orm.selectAll("burgers", function (res) {
+	selectAllBurgers: function (cb) {
+		orm.selectAllBurgers("burgers", function (res) {
 			cb(res);
 		});
 	},
@@ -17,12 +17,7 @@ const burger = {
 			cb(res);
 		});
 	},
-
-	// deleteBurger: function(condition, cb) {
-	//   orm.deleteBurger("burgers", condition, function(res) {
-	//     cb(res);
-	//   });
-	// }
 };
 
+// Exports the code to be used in index.handlebars
 module.exports = burger;

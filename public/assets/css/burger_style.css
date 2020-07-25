@@ -3,20 +3,21 @@
   background-repeat: no-repeat;
   background-position: right;
   background-color: black;
-  color: #ffffff;
+  color: white;
   margin-top: 3%;
 }
+/* Text-box text color */
 #newburger {
-  color: #5c5c5c;
+  color: black;
 }
 #leftside {
-  background-color: #5c5c5c;
+  background-color: green;
   color: white;
   text-align: center;
   font-size: 1.3em;
 }
 #rightside {
-  background-color: #e49322;
+  background-color: orange;
   color: white;
   text-align: center;
   font-size: 1.3em;

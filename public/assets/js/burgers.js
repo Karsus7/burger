@@ -18,6 +18,7 @@ $(function() {
     });
   });
 
+// Code for 
   $(".eatburger").on("click", function(event) {
     event.preventDefault();
 
@@ -33,17 +34,5 @@ $(function() {
       console.log("Burger devoured");
       location.reload();
     });
-  });
-
-  $(".delete-burger").on("click", function(event) {
-    event.preventDefault();
-
-    const id = $(this).data("id");
-
-    // Send the DELETE request.
-    $.ajax({
-      type: "DELETE",
-      url: "/api/burgers/" + id
-    }).then(location.reload());
   });
 });

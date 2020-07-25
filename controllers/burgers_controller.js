@@ -2,11 +2,11 @@
 // Universal variables allow the file to use "express" and express.Router
 const express = require("express");
 const router = express.Router();
-// Imports the model "burger.js" 
+// Imports from model "burger.js" 
 const burger = require("../models/burger");
 
 router.get("/", function(req, res) {
-  burger.selectAll(function(data) {
+  burger.selectAllBurgers(function(data) {
     const hdbrsObj = {
       burgers: data
     };
@@ -41,14 +41,6 @@ router.get("/", function(req, res) {
   router.delete("/api/burgers/:id", function(req, res) {
     const condition = "id = " + req.params.id;
     console.log("condition", condition);
-
-    // burger.deleteBurger(condition, function(result) {
-    //   if (result.changedRows === 0) {
-    //     return res.status(404).end();
-    //   } else {
-    //     res.status(200).end();
-    //   }
-    // });
   });
 });
 module.exports = router;

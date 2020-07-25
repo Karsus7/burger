@@ -28,7 +28,7 @@ function translateSql(ob) {
 }
 
 const orm = {
-	selectAll: function (table, cb) {
+	selectAllBurgers: function (table, cb) {
 		let queryString = "SELECT * FROM " + table + ";";
 
 		connection.query(queryString, function (err, res) {
