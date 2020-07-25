@@ -1,3 +1,4 @@
+// this file makes the buttons in the handlebars files work
 $(function() {
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
@@ -8,7 +9,7 @@ $(function() {
         .trim(),
       devoured: 0
     };
-
+// Sends the POST request to add new burger entry
     $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger
@@ -18,7 +19,7 @@ $(function() {
     });
   });
 
-// Code for 
+// Code for the "devour" button in index.handlebars
   $(".eatburger").on("click", function(event) {
     event.preventDefault();
 
@@ -26,7 +27,7 @@ $(function() {
     const devouredState = {
       devoured: 1
     };
-
+// Sends the PUT request to change the status of a burger to "eaten"
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: devouredState

@@ -1,3 +1,4 @@
+// Most of the code for this file was learned in 13-MVC, Activity 17-CatsApp, Solved, cat.js
 const orm = require("../config/orm.js");
 const burger = {
 	selectAllBurgers: function (cb) {
@@ -19,5 +20,5 @@ const burger = {
 	},
 };
 
-// Exports the code to be used in index.handlebars
+// Exports the code to be used in burgers_controller.js
 module.exports = burger;
