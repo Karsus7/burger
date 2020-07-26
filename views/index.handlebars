@@ -1,5 +1,5 @@
 <div class="container">
-
+{{!-- Jumbotron contains the submit box, the image, and the app name --}}
     <div class="jumbotron">
         <h1>Eat-Da-Burger!</h1>
         <br>
@@ -17,7 +17,9 @@
             </form>
         </panel>
     </div>
+    {{!-- The second row contains the two columns that contain the lists of burgers --}}
     <div class="row">
+        {{!-- Left side column --}}
         <div class="col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-heading" id="leftside"><strong>Your Burgers</strong>
@@ -38,6 +40,7 @@
                 </div>
             </div>
         </div>
+        {{!-- Right side column --}}
         <div class="col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-heading" id="rightside"><strong>Burgers You Have Eaten</strong>

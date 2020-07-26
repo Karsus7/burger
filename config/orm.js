@@ -52,6 +52,7 @@ const orm = {
 			cb(res);
 		});
 	},
+	  // An example of objColVals would be {name: burger, devoured: true}
 	updateBurger: function (table, objColVals, condition, cb) {
 		let queryString = "UPDATE " + table + " SET " +
 			translateSql(objColVals) + " WHERE " + condition;
